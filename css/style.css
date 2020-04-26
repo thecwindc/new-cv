@@ -3,9 +3,19 @@ body{
     padding: 0;
     background-color: #EFEFEF;
 }
+img{
+    vertical-align: top;
+}
 *{
     margin: 0;
     padding: 0;
+}
+ul,ol,li{
+    list-style: none;
+}
+h2{
+    font: 600 30px "Open Sans" ;
+    color: rgb(61,68,81);
 }
 a{
     color:inherit;
@@ -50,11 +60,10 @@ a{
 }
 .userCard{
     max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     background-color: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
-
 .topNavBar a span {
     font-family: "Arial Black";
     font-size: 24px;
@@ -107,6 +116,7 @@ padding-right: 100px;
     color:white;
     background-color: #e06567;
     display: inline-block;
+    vertical-align: top;
     line-height: 21px;
     position: relative;
     margin-bottom: 25px;
@@ -161,7 +171,7 @@ hr{
     margin: 20px 20px;
 }
 .userCard footer a:hover{
-    background-color: #CF5D6F;
+    background-color: rgb(208, 92, 96);
 }
 .userCard svg{
     padding-top: 10px;
@@ -170,4 +180,132 @@ hr{
     fill: white;
     vertical-align: top;
 }
+main{
+    margin-top: -340px;
+}
+.main-button-outer{
+    text-align: center;
+}
+main .button{
+    display: inline-block;
+    border: 1px solid #CDCFD1;
+    padding: 20px 60px;
+    margin:42px 0;
+    border-radius: 4px;
+    font: 600 16px "Open Sans";
+    color: rgb(61, 68, 81);
+    transition:box-shadow 0.35s;
+}
+main .button:hover{
+     box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.2);    
+}
+main .selfIntroduction{
+    max-width: 940px;
+    margin: 0 auto;
 
+}
+.skill{
+    background-color: #fff;
+    text-align: center;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 40px 0 4px 0;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+}
+.skill ol li{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    text-align: left;
+    font: 300 14px "Open Sans";
+    color: rgb(61,68,81);
+}
+.skill ol li .progressBar{
+    height: 5px;
+    background-color: rgb(250,225,225);
+    border-radius: 15px;
+    margin-top: 4px;
+}
+.skill ol li .schedule{
+    height: 5px;
+    background-color: #e8676b;
+    border-radius: 15px;
+}
+.skill ol li:nth-child(even){
+    padding: 0 50px 0 14px;
+}
+.skill ol li:nth-child(odd){
+    padding: 0 14px 0 50px;
+}
+section{
+    text-align: center;
+}
+section h2{
+    margin-top: 78px;
+    margin-bottom: 30px;
+}
+section .portfolio{
+    max-width: 940px;
+    margin: 0 auto;
+}
+section .portfolio nav ol li{
+    
+    float: left;
+    margin-left: 35px;
+}
+section .portfolio nav ol li:nth-child(1){
+    margin-left: 0;
+}
+section .portfolio nav ol{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+section .portfolio nav .bar{
+    height: 5px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+section .portfolio nav .bar .bar-inner{
+    height: 100%;
+    background-color: #e8676b;
+    border-radius: 3px;
+    width: 20%;
+    transition: all 0.38s;
+}
+section .portfolio nav{
+    display: inline-block;
+    vertical-align: top;
+    font: 600 16px "Open Sans"; 
+    color: rgb(61, 68, 81);
+}
+section nav .bar.state-1 .bar-inner{
+    width: 20%;
+    margin-left: 0%;
+}
+section .portfolio nav .bar.state-2 .bar-inner{
+    width: 47%;
+    margin-left: 27%;
+}
+section .portfolio .bar.state-3 .bar-inner{
+    width: 20%;
+    margin-left: 188px;
+}
+section .portfolio .jobs{
+    margin: 28px 0 500px 0;
+    height: 606px;
+    max-width: 940px;
+    position: relative;
+}
+section .portfolio .jobs .works1,.works2,.works3{
+    position: absolute;
+}
+section .portfolio .jobs .works2{
+   right: 0;
+}
+section .portfolio .jobs .works3{
+    right: 0;
+    bottom: 0;
+ }
